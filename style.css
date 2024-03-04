@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main { padding-top: 10px;
+  background:linear-gradient(to bottom right, #b9b9b9b4,#202020);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100lvw;
+  min-height: 100vh;
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90%; 
+box-shadow: 0px 0px 100px 5px;
+  flex-direction: column;
+  align-items: center;
+border-radius: 20px;
+}
+#sec1 {
+  background-color: #4c4c4c73;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 10px;
+  height: 100%;
+}
+#sec2 {
+  background-color: #4c4c4c73;
+  padding: 10px;
+  height: 100%;
+
+}
+
+#sec3 {
+  background-color: #4c4c4c73;
+  padding: 10px;
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+}
+form input {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  width: 90%;
+  margin: 10px;
+  padding: 10px;
+  height:  50px;
+}
+form button {
+  border-radius: 10px;
+  width: 50%;
+  padding: 10px;
+}
+.listwrapper {
+  padding: 20px;
+  line-height: 30px;
+}
+.lists {
+  font-weight: 800;
+}
+.sec {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <form id="postForm">
+        <div class="sec" id="sec1">
+          <h1>Add Post</h1>
+
+          <input placeholder="id" id="id" type="number" />
+          <input placeholder="title" id="title" type="text" />
+          <input placeholder="body" id="body" type="text" />
+          <button type="button" onclick="addPost()">Add Post</button>
+        </div>
+        <div class="sec" id="sec2">
+          <h1>Delete Post</h1>
+
+          <input placeholder="ID to delete" id="deleteId" type="number" />
+          <button type="button" onclick="deletePostById()">Delete Post</button>
+        </div>
+        <div class="sec" id="sec3">
+          <h1>Edit Post</h1>
+          <input placeholder="ID to edit" id="editId" type="number" />
+
+          <input placeholder="ID to edit" id="edituserID" type="number" />
+          <input placeholder="New Title" id="editTitle" type="text" />
+          <input placeholder="New Body" id="editBody" type="text" />
+          <button type="button" onclick="editPost()">Apply Changes</button>
+        </div>
+      </form>
+      <div class="listwrapper">
+        <div class="lists" id="lists"></div>
+      </div>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
