@@ -92,6 +92,12 @@ const renderPaginationIndex = () => {
       displayPosts();
       renderPaginationIndex();
     });
+
+    // Check if the current page matches the page number being rendered
+    if (i === currentPage) {
+      pageIndexItem.classList.add("active");
+    }
+
     paginationIndex.appendChild(pageIndexItem);
   }
 };

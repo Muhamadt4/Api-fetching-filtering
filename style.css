@@ -17,7 +17,7 @@ html {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100%;
+  min-height:100lvh ;
 }
 
 form {
@@ -25,6 +25,7 @@ form {
   width: 40%;
   border-radius: 20px;
   transition: all 0.4s;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 #sec1 {
@@ -78,6 +79,8 @@ form button:hover {
   margin-bottom: 20px;
   border-radius: 20px;
   padding: 10px;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.5);
+
 }
 
 .lists .postcomm {
@@ -134,6 +137,7 @@ form button:hover {
   background-color: #0095e5;
 }
 
+
 #paginationIndex {
   font-weight: bold;
   list-style: none;
@@ -143,11 +147,19 @@ form button:hover {
   flex-wrap: nowrap;
   gap: 1rem;
 }
+.active{
+  background-color: #8e8e8e55;
+  border-radius: 20px;
+  
+
+}
 
 #paginationIndex li {
   cursor: pointer;
   border-bottom: 2px solid transparent;
   padding: 3px;
+  border-radius: 20px;
+
   transition: all 0.4s;
 }
 
