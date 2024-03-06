@@ -9,21 +9,33 @@
   <body>
     <div class="main">
       <form id="postForm">
-          <div class="sec" id="sec1">
-              <h1>Add Post</h1>
-  
-              <input placeholder="Title" id="title" type="text" required/>
-              <input placeholder="Body" id="body" type="text" required/>
-              <button type="button" onclick="addPost()">Add Post</button>
-          </div>
+        <h1>Add Post</h1>
+        <div class="sec" id="sec1">
+          <input
+            placeholder="Title"
+            name="title"
+            id="title"
+            type="text"
+            required
+          />
+
+          <input
+            placeholder="Body"
+            name="body"
+            id="body"
+            type="text"
+            required
+          />
+        </div>
+        <button type="button" onclick="addPost()">Add Post</button>
       </form>
       <div class="pagination">
-          <ul id="paginationIndex"></ul>
+        <ul id="paginationIndex"></ul>
       </div>
       <div class="listwrapper">
-          <div class="lists" id="lists"></div>
+        <div class="lists" id="lists"></div>
       </div>
-  </div>
+    </div>
     <script src="script.js" defer></script>
   </body>
 </html>
