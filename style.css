@@ -2,46 +2,42 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
+  overflow-x: hidden;
 }
-.main { padding-top: 10px;
-  background:linear-gradient(to bottom right, #b9b9b9b4,#202020);
+
+html {
+  scroll-behavior: smooth;
+}
+
+.main {
+  padding-top: 10px;
+  background-color: #90e0ef;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100lvw;
-  min-height: 100vh;
+  width: 100%;
+  height: 100%;
 }
+
 form {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 90%; 
-box-shadow: 0px 0px 100px 5px;
-  flex-direction: column;
-  align-items: center;
-border-radius: 20px;
+  color: white;
+  width: 40%;
+  border-radius: 20px;
+  transition: all 0.4s;
 }
+
 #sec1 {
-  background-color: #4c4c4c73;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  background-color: #0077b6;
+  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
   padding: 10px;
   height: 100%;
-}
-#sec2 {
-  background-color: #4c4c4c73;
-  padding: 10px;
-  height: 100%;
-
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-#sec3 {
-  background-color: #4c4c4c73;
-  padding: 10px;
-  height: 100%;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-
-}
 form input {
   outline: none;
   border: none;
@@ -49,24 +45,136 @@ form input {
   width: 90%;
   margin: 10px;
   padding: 10px;
-  height:  50px;
+  height: 50px;
 }
+
 form button {
+  cursor: pointer;
   border-radius: 10px;
   width: 50%;
   padding: 10px;
-}
-.listwrapper {
-  padding: 20px;
-  line-height: 30px;
-}
-.lists {
-  font-weight: 800;
-}
-.sec {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  transition: all 0.4s;
+  font-weight: bold;
+  border: none;
 }
 
+form button:hover {
+  background-color: #90e0ef;
+}
+
+.listwrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  line-height: 30px;
+  width: 50%;
+  transition: all 0.4s;
+}
+
+.lists {
+  color: rgb(54, 54, 54);
+  background-color: #caf0f8;
+  font-weight: 800;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.lists .postcomm {
+  border-bottom: 2px solid #2020203e;
+  margin-bottom: 10px;
+  padding: 10px;
+  gap: 20px;
+}
+
+.lists .postcomm .titlecomm {
+  font-size: 1.5rem;
+  margin-left: 10px;
+  font-weight: 600;
+  display: block;
+}
+
+.lists .postcomm .bodycomm {
+  font-size: 0.8rem;
+  margin-left: 10px;
+  display: block;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.edit-title,
+.edit-body {
+  padding: 10px;
+  margin: 2px;
+  background-color: transparent;
+  border: 1px solid #0077b6;
+  border-radius: 20px;
+  width: 90%;
+  font-size: 20px;
+}
+
+.editbtn,
+.deletebtn,
+.savebtn {
+  cursor: pointer;
+  width: 6rem;
+  padding: 0.5rem;
+  color: rgb(255, 255, 255);
+  margin-right: 10px;
+  border: 1px solid rgb(70, 70, 70);
+  background-color: #0077b6;
+  border-radius: 20px;
+  transition: all 0.4s;
+}
+
+.editbtn:hover,
+.deletebtn:hover,
+.savebtn:hover {
+  background-color: #0095e5;
+}
+
+#paginationIndex {
+  font-weight: bold;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+
+#paginationIndex li {
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  padding: 3px;
+  transition: all 0.4s;
+}
+
+#paginationIndex li:hover {
+  border-bottom: 2px solid #07090a;
+}
+
+@media screen and (max-width: 1200px) {
+  form {
+    width: 90%;
+    transition: all 0.4s;
+  }
+
+  .listwrapper {
+    width: 100%;
+    transition: all 0.4s;
+  }
+
+  .editbtn,
+  .deletebtn,
+  .savebtn {
+    width: 6rem;
+    transition: all 0.4s;
+  }
+
+  #paginationIndex {
+    flex-wrap: wrap;
+    transition: all 0.4s;
+  }
+}
