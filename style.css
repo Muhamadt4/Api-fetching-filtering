@@ -12,6 +12,27 @@
 html {
   scroll-behavior: smooth;
 }
+/* Standard syntax */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Safari and Chrome */
+::-webkit-scrollbar-thumb {
+  background-color: #212429;
+  border-radius: 10px;
+}
+
+/* Firefox */
+::-moz-scrollbar {
+  width: 10px;
+}
+
+/* Firefox */
+::-moz-scrollbar-thumb {
+  background-color: #212429;
+  border-radius: 10px;
+}
 
 .main {
   padding-top: 10px;
@@ -75,6 +96,7 @@ form button:hover {
   justify-content: center;
   line-height: 30px;
   width: 50%;
+  max-width: 50%;
   transition: all 0.4s;
 }
 
@@ -86,7 +108,7 @@ form button:hover {
 }
 
 .lists .postcomm {
-  border-bottom: 1px solid #e9e9e9be;
+  border-bottom: 1px solid #e9e9e922;
   margin-bottom: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -119,8 +141,8 @@ form button:hover {
   border: 1px solid #6c6c6c;
   border-radius: 20px;
   color: #fafafa;
-  width: 90%;
-  font-size: 20px;
+  width: 98%;
+  font-size: 1.3rem;
   resize: none;
   scrollbar-color: #212429 rgb(80, 80, 80);
   scroll-behavior: smooth;
