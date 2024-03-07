@@ -96,12 +96,14 @@ form button:hover {
   justify-content: center;
   line-height: 30px;
   width: 50%;
+
   transition: all 0.4s;
 }
 
 .lists {
   margin-top: 50px;
   color: #fafafa;
+  min-width: 100%;
   font-weight: 800;
   margin-bottom: 20px;
 }
@@ -222,4 +224,3 @@ form button:hover {
     transition: all 0.4s;
   }
 }
-
