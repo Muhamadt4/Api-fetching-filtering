@@ -117,12 +117,17 @@ form button:hover {
   margin: 2px;
   background-color: transparent;
   border: 1px solid #6c6c6c;
-  color: #fafafa;
   border-radius: 20px;
+  color: #fafafa;
   width: 90%;
   font-size: 20px;
   resize: none;
-  overflow-y: hidden;
+  scrollbar-color: #212429 rgb(80, 80, 80);
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.edit-body {
+  height: 14rem;
 }
 
 .editbtn,
@@ -196,6 +201,5 @@ form button:hover {
     transition: all 0.4s;
   }
 }
-@media screen and (max-width: 600px){
-
+@media screen and (max-width: 600px) {
 }
