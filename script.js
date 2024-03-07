@@ -158,6 +158,7 @@ const deletePost = (event) => {
 
 // Function to edit a post
 const editPost = (event) => {
+  
   // Find the post element and its ID
   const postElement = event.target.closest(".postcomm");
   const postId = parseInt(postElement.dataset.id);

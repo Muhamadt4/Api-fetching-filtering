@@ -96,7 +96,6 @@ form button:hover {
   justify-content: center;
   line-height: 30px;
   width: 50%;
-  max-width: 50%;
   transition: all 0.4s;
 }
 
@@ -223,5 +222,4 @@ form button:hover {
     transition: all 0.4s;
   }
 }
-@media screen and (max-width: 600px) {
-}
+
